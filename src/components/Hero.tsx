@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import profileImg from "@/imgs/new.jpg";
+import bgImg from "@/imgs/profile-img.jpg";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
@@ -13,7 +14,11 @@ const Hero = () => {
       {/* Hero background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/imgs/profile-img.jpg')" }}
+        style={{
+          backgroundImage: `url(${bgImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       ></div>
 
       {/* Dark semi-transparent overlay with blur */}
