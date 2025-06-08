@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import profileImg from "@/imgs/new.jpg";
 import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
             <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                 <img
-                  src="/Patrick-Codes-Portfolio/imgs/new.jpg"
+                  src={profileImg}
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
