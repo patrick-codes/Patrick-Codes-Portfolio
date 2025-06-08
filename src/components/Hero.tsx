@@ -66,7 +66,11 @@ const Hero = () => {
               View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>
-            <a href="/my_resume_new.pdf" download className="inline-block">
+            <a
+              href={`${import.meta.env.BASE_URL}my_resume_new.pdf`}
+              download
+              className="inline-block"
+            >
               <Button
                 variant="outline"
                 size="lg"
